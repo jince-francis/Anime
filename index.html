@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <nav class="bg-black h-24">
+        <div class="flex justify-between items-center px-4 h-full">
+            <div class="ml-7">
+                <h1 class="text-white text-3xl font-bold">ANIMEFLIX</h1>
+            </div>
+            <div class="hidden md:flex border-double border-4 border-green-600 rounded-full">
+                <ul class="flex justify-center items-center ">
+                    <li class="p-4 text-white"><a href="#home">HOME</a></li>
+                    <li class="p-4 text-white"><a href="#recommended">RECOMMENDED</a></li>
+                    <li class="p-4 text-white"><a href="#collections">COLLECTIONS</a></li>
+                    <li class="p-4">
+                        <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #00ff22;"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center ml-2 sm:justify-center">
+                <i class="fa-solid fa-bell p-4 fa-xl" style="color: #04ff00;"></i>
+                <i class="fa-solid fa-circle p-4 fa-xl" style="color: #7fabe5;"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- home page -->
+    <div class="bg-black h-screen flex justify-center items-center" id="home">
+        <div class="bg-[url('https://c4.wallpaperflare.com/wallpaper/34/877/118/anime-one-piece-brook-one-piece-franky-one-piece-wallpaper-preview.jpg')] mt-6 w-9/12 rounded-[22px] h-4/5 bg-cover bg-no-repeat bg-center absolute">
+             <div class="flex justify-between items-center h-full">
+                <i class="fa-solid fa-arrow-left fa-3x md:-ml-14 rounded-full p-1" style="color: white; border: 2px solid white;"></i>
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+                    <a href="#" class="bg-teal-900 text-white md:px-4 py-2 rounded font-black">WATCH NOW</a>
+                </div>
+                <i class="fa-solid fa-arrow-right fa-3x  md:-mr-14 rounded-full p-1" style="color: white; border: 2px solid white;"></i>
+             </div>
+        </div>
+    </div>
+    
+    <!-- special for you -->
+    <div class=" bg-black" id="recommended">
+        <h1 class="text-white font-black pl-24 text-2xl">
+          <span class="text-emerald-500">| </span>Special for you
+        </h1>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:pl-24">
+          <!-- Card 1 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <img src="https://m.media-amazon.com/images/I/61dV1xk2omL._AC_UF1000,1000_QL80_.jpg" alt="Card Image" class="w-10/12 h-64 object-cover">
+            <div class="p-4">
+              <h2 class="font-bold text-white text-lg">Demon slayer</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <img src="https://m.media-amazon.com/images/I/61UbOJh7ldL._AC_UF1000,1000_QL80_.jpg" alt="Card Image" class="w-10/12 h-64 object-cover">
+            <div class="p-4">
+              <h2 class="font-bold text-white text-lg">Naruto</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <img src="https://images-cdn.ubuy.co.in/634f30d79be1d479916cb3dc-hxh-poster-anime-room-decor-canvas-wall.jpg" alt="Card Image" class="w-10/12 h-64 object-cover object-center">
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Hunter x Hunter</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://thecomicbookstore.in/storage/2022/09/TCBS2491.jpg" alt="Card Image" class="w-10/12 h-64 object-cover object-center"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Attack on titan</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- trending ,newly added , most viewed -->
+      <div class="bg-black" id="collections">
+        <h1 class="text-white md:pl-24 md:text-2xl sm:text-xl">
+          <span class="text-emerald-500">| </span>Trending 
+          <span class="text-emerald-500"> | </span> 
+          <span class="text-gray-600">Newly added</span>
+          <span class="text-emerald-500"> | </span> 
+          <span class="text-gray-600">Most viewed</span>
+        </h1>
+      
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:pl-24">
+          <!-- First Row of Cards -->
+          <!-- Card 1 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/7/q/f/medium-anime-poster-frame-death-note-manga-black-framed-wall-original-imagnv663gwcnj9x.jpeg?q=20&crop=false" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-white text-lg">Death note</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://i.pinimg.com/736x/28/fe/a2/28fea2161525e632743ff62d1cefb798.jpg" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-white text-lg">Jujustu kaisen</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGc3d5y0SIupOde_AxICmwlPaDcDTE7pWogw&s" alt="Card Image" class="w-10/12 h-64 object-cover object-center"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Dragon ball</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 4 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh00kuFVWQY8b_9u-yXHt6OHAVwrUZ88jqVQ&s" alt="Card Image" class="     w-10/12 h-64 object-cover object-center"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Tower of god</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Second Row of Cards -->
+          <!-- Card 5 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://m.media-amazon.com/images/I/6172sX-TInL.jpg" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Bleach</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 6 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://i.pinimg.com/564x/07/65/06/0765067164eaa1c82182e5e22ec49f38.jpg" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Vinland saga</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 7 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://64.media.tumblr.com/7c6ef5854539a6d56584ea30001c088b/f27869994b496a64-70/s1280x1920/d1472f23c785cd1833856de987cdf6b57391e46e.jpg" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">Chainsaw man</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+      
+          <!-- Card 8 -->
+          <div class="bg-black shadow-md rounded-lg overflow-hidden">
+            <a href=""><img src="https://i.pinimg.com/originals/b4/8f/09/b48f090988d301142267c7febc29b44b.jpg" alt="Card Image" class="w-10/12 h-64 object-cover"></a>
+            <div class="p-4">
+              <h2 class="font-bold text-lg text-white">91 days</h2>
+              <p class="text-gray-600">sub | dub</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center py-5">
+            <a href="#" class="bg-teal-900 text-white px-4 py-2 rounded-full font-black w-3/12 flex justify-center">Load more...</a>
+        </div>
+      </div>
+
+      <!-- footer  -->
+
+<!-- Footer Section -->
+<footer class="bg-black text-white pt-10 border-t border-gray-700">
+  <div class="container mx-auto px-6 flex flex-col items-center">
+    <!-- Footer Content -->
+    <div class="flex flex-wrap justify-center text-center w-full mb-6">
+      
+      <!-- Section 1: Logo or About -->
+      <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+        <h2 class="text-xl font-bold">ANIMEFLIX</h2>
+        <p class="text-gray-400">Providing All Animes</p>
+      </div>
+
+      <!-- Section 2: Links -->
+      <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+        <h2 class="text-lg font-bold mb-2">Quick Links</h2>
+        <ul>
+          <li><a href="#" class="text-gray-400 hover:text-white">Upcoming animes</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Anime news</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Top anime creators</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-white">Top animation companies</a></li>
+        </ul>
+      </div>
+
+      <!-- Section 3: Social Media -->
+      <div class="w-full sm:w-1/3">
+        <h2 class="text-lg font-bold mb-2">Follow Us</h2>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-facebook-f"></i> <!-- Font Awesome Icon for Facebook -->
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-twitter"></i> <!-- Font Awesome Icon for Twitter -->
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-instagram"></i> <!-- Font Awesome Icon for Instagram -->
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <i class="fab fa-linkedin"></i> <!-- Font Awesome Icon for LinkedIn -->
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-6 border-t border-gray-700 pt-4 text-center w-full">
+      <p class="text-gray-500">©️ 2024 ANIMEFLIX. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+    
+</body>
+</html>
